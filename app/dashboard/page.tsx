@@ -79,6 +79,8 @@ export default function Dashboard() {
       <h1>Tableau de bord</h1>
       <p>
         <Link href="/encaissements">→ Gérer mes encaissements</Link>
+        {" | "}
+        <Link href="/factures">→ Mes factures</Link>
       </p>
 
       <section>
