@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import {
   TAUX_2026,
@@ -76,6 +77,9 @@ export default function Dashboard() {
   return (
     <main style={{ maxWidth: 640, margin: "0 auto", padding: "2rem" }}>
       <h1>Tableau de bord</h1>
+      <p>
+        <Link href="/encaissements">→ Gérer mes encaissements</Link>
+      </p>
 
       <section>
         <h2>CA du mois</h2>
